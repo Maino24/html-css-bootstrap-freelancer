@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -12,7 +13,7 @@
   
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid ">
+            <div class="container">
               <h1 class="navbar-brand" href="#">START BOOTSTRAP</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,8 +33,8 @@
     <main>
 
         <section class=" bg-success">
-            <div class="container">
-            <img src="./img/avatar.svg" class="container" alt="img-prima-section">
+            <div class="container w-75">
+            <img src="./img/avatar.svg" class="container  justify-content-center" alt="img-prima-section">
             </div>
             <div class="text-center text-white">
             <h2>START BOOTSTRAP</h2>
@@ -47,39 +48,92 @@
             <div class="container text-center ">
                 <div class="row">
                   <div class="col-sm-6 col-lg-4 ">
-                    <img src="./img/cabin.png" class="container" alt="">
+                    <img src="./img/cabin.png" class="img-thumbnail rounded" alt="">
                   </div>
                   <div class="col-sm-6 col-lg-4">
-                    <img src="./img/cake.png" class="container" alt="">
+                    <img src="./img/cake.png" class="img-thumbnail rounded" alt="">
                   </div>
                   <div class="col-sm-6 col-lg-4">
-                    <img src="./img/circus.png" class="container" alt="">
+                    <img src="./img/circus.png" class="img-thumbnail rounded" alt="">
                   </div>
                   <div class="col-sm-6 col-lg-4">
-                    <img src="./img/game.png" class="container" alt="">
-                  </div>
-
-                  <div class="col-sm-6 col-lg-4">
-                    <img src="./img/safe.png" class="container" alt="">
+                    <img src="./img/game.png" class="img-thumbnail rounded" alt="">
                   </div>
 
                   <div class="col-sm-6 col-lg-4">
-                    <img src="./img/submarine.png" class="container" alt="">
+                    <img src="./img/safe.png" class="img-thumbnail rounded" alt="">
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <img src="./img/submarine.png" class="img-thumbnail rounded" alt="">
                   </div>
                 </div>
               </div>  
         </section>
 
-        <section>
+        <section class="contaier bg-success text-white">
+            <h3 class="text-center">ABOUT</h3>
+            <div class="contaier  text-center">
+                <div class="row justify-content-center border border border-danger">
+                    <p class="col-sm-3 col-lg-4 border border border-danger ">
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, nad Javascript as well as optional LESS stylesheets for easy costumization.
+                    </p>
+                    <p class="col-sm-3 col-lg-4 border border border-danger">
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, nad Javascript as well as optional LESS stylesheets for easy costumization.
+                    </p>
+                </div>
+                <button class="text-white bg-success border border-light"><span><i class="fa-solid fa-download"></i> Download</span></button>
+            </div>
 
+        </section>
+
+        <section>
+            <h2 class="container text-center">CONTACT ME</h2>
+                <div class="container-fluid w-75">
+                    <ul class="">
+                        <li class="border border-top-0 border-end-0 border-start-0">Name</li>
+                        <li class="border border-top-0 border-end-0 border-start-0">Email Address</li>
+                        <li class="border border-top-0 border-end-0 border-start-0">Phone Number</li>
+                        <li class="border border-top-0 border-end-0 border-start-0">Message</li>
+                    </ul>
+                </div>
+
+                <div class=" w-50">
+                    <button class="text-white bg-success border-0">Send</button>
+                </div>
+        </section>
+
+        <section class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>LOCATION</h5>
+                    <p>2215 John Daniel Drive Clark, MO 54243</p>
+                </div>
+             
             
+                <div class="col-sm-4">
+                    <h5>AROUND THE WEB</h5>
+                    <div>
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-google-plus-g"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    </div>
+                </div>
+            
+            
+                <div class="col-sm-4">
+                    <h5>ABOUT FREELANCER</h5>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by <span class="text-success">Start Bootstrap</span>.</p>
+                </div>
+            </div>
         </section>
 
     </main>
 
 
-    <footer>
-
+    <footer class="text-center text-white bg-dark" style="height: 100px">
+        <p class="">Copyright <i class="fa-regular text-white fa-copyright"></i> Your Website 2019</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

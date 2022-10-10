@@ -2,3 +2,7 @@
     flex-grow: 0;
 
 }
+
+li{
+    list-style: none;
+}
