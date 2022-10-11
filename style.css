@@ -22,3 +22,7 @@ li{
     background-color: black;
     width: 100px;
 }
+
+.bg-color{
+    background-color: rgb(51, 51, 95);
+}
